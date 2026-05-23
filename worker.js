@@ -40,7 +40,7 @@ const worker = new Worker(
   },
   {
     connection:  redisConn,
-    concurrency: 5,
+    concurrency: 15,
     metrics:     { maxDataPoints: MetricsTime.ONE_WEEK }
   }
 );
